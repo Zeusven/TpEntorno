@@ -11,12 +11,24 @@
 echo "Cuantas imagenes desea generar?"
 read CANTIDAD
 
-if [ $"ls ../datasets" ]
+
+# Descarga de imagenes
+if [ $"ls ../datasets/*.jpg" ]
 then
-  rm -f ../datasets/*
+  rm -f ../datasets/*.jpg
+  # Descarga csv con nombres
+  if [ -f $"../datasets/names.csv" ]
+  then
+    echo "El csv ya existe."
+  else
+    curl https://raw.githubusercontent.com/adalessandro/EdP-2023-TP-Final/main/dict.csv > ../datasets/names.csv
+    echo "Descargando csv"
+  fi
   for (( i=1; i<=CANTIDAD; i+=1 ))
   do
     curl https://thispersondoesnotexist.com/ > ../datasets/imagen$i.jpg
     sleep 1
   done
 fi
+
+
