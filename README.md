@@ -165,15 +165,13 @@ Copy code
 
 - Desarrollo del menú
 - README.md
--
+- Archivo generador de imagenes
 -
 -
 
 
 ## Authors
 
-* **Leonardi Pablo** - *Estudiante de la Tecnicatura en Inteligencia Artificial* - [Leonardi Pablo](https://github.com/Zeusven) - **
-* **Postiglione Anna** - *Estudiante de la Tecnicatura en Inteligencia Artificial* - [Postiglione Anna](https://github.com/annapostiglione) - **
 * **Troanes Federico Nahuel** - *Estudiante de la Tecnicatura en Inteligencia Artificial* - [Troanes Federico Nahuel](https://github.com/FefeTroanes) - **
 
 ## Acknowledgements
