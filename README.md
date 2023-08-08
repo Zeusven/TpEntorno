@@ -166,7 +166,7 @@ Copy code
 - Desarrollo del menú
 - README.md
 - Archivo generador de imagenes
--
+- Archivo para descomprimir las imagenes
 -
 
 
