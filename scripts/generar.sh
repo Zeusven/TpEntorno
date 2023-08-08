@@ -5,8 +5,8 @@
 # descarga y descarga para no saturar el servicio y evitar problemas. Se debe
 # poder indicar por argumento cuantas imágenes generar
 # y se deben asignar nombres de archivo al azar de una lista de nombres de personas.
-
 # Luego se deben comprimir las imágenes
+
 # y generar un archivo con su suma de verificación.
 
 echo "Cuantas imagenes desea generar?"
@@ -43,3 +43,6 @@ done
 
 # Compresion de las imagenes
 tar -zcvf ../datasets/imagenes.tar.gz "../datasets/imagenes"
+
+# Generacion de la suma de verificacion
+sha256sum ../datasets/imagenes.tar.gz > ../datasets/imagenes.tar.gz.sha256
