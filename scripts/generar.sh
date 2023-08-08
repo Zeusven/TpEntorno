@@ -39,5 +39,5 @@ tar -zcvf ../datasets/imagenes.tar.gz "../datasets/imagenes"
 sha256sum ../datasets/imagenes.tar.gz > ../datasets/imagenes.tar.gz.sha256
 
 # Limpieza de directorios
-rm -r ../datasets/imagenes
+# rm -r ../datasets/imagenes
 rm -r ../datasets/names.csv
