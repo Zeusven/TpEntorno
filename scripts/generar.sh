@@ -1,14 +1,5 @@
 #!/bin/bash
 
-# Genera imágenes utilizando algún servicio web. Tener
-# en cuenta que al descargar de una página conviene usar un sleep entre
-# descarga y descarga para no saturar el servicio y evitar problemas. Se debe
-# poder indicar por argumento cuantas imágenes generar
-# y se deben asignar nombres de archivo al azar de una lista de nombres de personas.
-# Luego se deben comprimir las imágenes
-
-# y generar un archivo con su suma de verificación.
-
 echo "Cuantas imagenes desea generar?"
 read CANTIDAD_IMAGENES
 RUTA_CSV="../datasets/names.csv"
@@ -46,3 +37,7 @@ tar -zcvf ../datasets/imagenes.tar.gz "../datasets/imagenes"
 
 # Generacion de la suma de verificacion
 sha256sum ../datasets/imagenes.tar.gz > ../datasets/imagenes.tar.gz.sha256
+
+# Limpieza de directorios
+rm -r ../datasets/imagenes
+rm -r ../datasets/names.csv
