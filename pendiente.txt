@@ -1,0 +1,7 @@
+Generar.sh
+- Validar que la cantidad de imagenes sea un numero positivo.
+- Que el usuario pueda elegir el nombre que le pone al archivo comprimido para ingresarlo en descomprimir.sh
+
+
+Descomprimi.sh
+- Validar el ingreso de los archivos (while true bla bla...)

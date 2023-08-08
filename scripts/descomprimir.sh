@@ -40,10 +40,10 @@ PARA_VERIFICAR2=$(cat ../datasets/$ARCHIVO_VERIFICACION)
 
 if [ "$PARA_VERIFICAR1" == "$PARA_VERIFICAR2" ]
 then
-  echo "son iguales"
+  echo "Descomprimiendo..."
   mkdir -p ../datasets/descomprimido
   tar -zxvf ../datasets/$ARCHIVO_DESCOMPRIMIR -C ../datasets/descomprimido
 else
-  echo "no son iguales"
+  echo "La suma de verificacion no coincide con el archivo indicado."
 fi
 
