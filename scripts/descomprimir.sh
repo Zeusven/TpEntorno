@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Se debe poder indicar por argumento dos archivos (uno con las imágenes comprimidas y otro con una suma de verificación).
-# Si ocurrió algún error se debe informar al usuario
-# de lo contrario se procede a descomprimir.
-
 echo "Ingrese el nombre del archivo que desea descomprimir: "
 echo "Recuerde que las extensiones son <nombre>.tar.gz"
 read ARCHIVO_DESCOMPRIMIR
