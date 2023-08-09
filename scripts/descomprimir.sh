@@ -46,4 +46,3 @@ then
 else
   echo "La suma de verificacion no coincide con el archivo indicado."
 fi
-
